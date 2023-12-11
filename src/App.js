@@ -1,19 +1,15 @@
 import React from "react";
-import Header from "./components/Header";
-import DebtandFunds from "./components/DebtandFunds";
-import AccountInfo from "./components/AccountInfo";
-import Button from "./components/Button";
 
-function App() {
+// const element = createElement(type, props, ...children);
+
+function Greeting({ name }) {
   return (
-    <div className="App">
-      <Header />
-      <DebtandFunds />
-      <AccountInfo />
-
-      <Button />
-    </div>
+    <h1 className="greeting">
+      Hello <i>{name}</i>. Welcome!
+    </h1>
   );
 }
 
-export default App;
+export default function App() {
+  return <Greeting name="Taylor" />;
+}
