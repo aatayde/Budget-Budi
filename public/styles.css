@@ -4,14 +4,42 @@
   box-sizing: border-box;
 }
 
+html {
+  /* placeholder value */
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  height: 100vh;
+}
+
 header {
-  background-color: #50c878;
   margin: auto;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: #00a86b;
 }
 
 header h1 {
+  color: #fff;
   font-family: Ubuntu;
   font-weight: 200;
+}
+
+@media (prefers-color-scheme: dark) {
+  header h1 {
+    color: #121212;
+  }
+  body {
+    background: #16181d;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  header h1 {
+    color: #fff;
+  }
+  body {
+    background: #e3e3e3;
+  }
 }
