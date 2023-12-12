@@ -12,5 +12,6 @@ header {
 }
 
 header h1 {
-  font-family: cursive;
+  font-family: Ubuntu;
+  font-weight: 200;
 }
