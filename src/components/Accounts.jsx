@@ -16,7 +16,9 @@ const accounts = [
 
 export function Accounts() {
   const listAccounts = accounts.map((account) => (
-    <li key={account.id}>{account.title}</li>
+    <li key={account.id}>
+      {account.title} ${account.balance}
+    </li>
   ));
 
   return <ul>{listAccounts}</ul>;
