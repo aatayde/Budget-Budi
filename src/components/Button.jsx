@@ -4,8 +4,8 @@ function Button() {
   const [count, setCount] = useState(0);
   function handleClick() {
     setCount(count + 1);
-    alert(`you clicked ${count} times`);
+    // alert(`you clicked ${count} times`);
   }
-  return <button onClick={handleClick}>+</button>;
+  return <button onClick={handleClick}>{count}</button>;
 }
 export default Button;
