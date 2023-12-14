@@ -1,11 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
-function Button() {
-  const [count, setCount] = useState(0);
-  function handleClick() {
-    setCount(count + 1);
-    // alert(`you clicked ${count} times`);
-  }
+function Button({ count, handleClick }) {
   return <button onClick={handleClick}>{count}</button>;
 }
 export default Button;
