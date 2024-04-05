@@ -1,5 +1,9 @@
 function Greeting() {
-  return <h1>Hello, World!</h1>;
+  return (
+    <div className="dark">
+      <h1>Hello, World!</h1>
+    </div>
+  );
 }
 
 export default Greeting;
