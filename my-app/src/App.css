@@ -1,7 +1,7 @@
 .dark {
   /* background-color: #333; */
 }
-
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #212121;
@@ -9,6 +9,7 @@
   }
 }
 
+/* Light Mode */
 @media (prefers-color-scheme: light) {
   body {
   }
