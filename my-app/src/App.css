@@ -1,5 +1,5 @@
-.dark {
-  /* background-color: #333; */
+.centerText {
+  text-align: center;
 }
 /* Dark Mode */
 @media (prefers-color-scheme: dark) {

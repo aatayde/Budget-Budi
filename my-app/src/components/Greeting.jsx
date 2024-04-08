@@ -1,6 +1,6 @@
 function Greeting() {
   return (
-    <div className="dark">
+    <div className="centerText">
       <h1>Hello, World!</h1>
     </div>
   );
