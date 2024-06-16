@@ -1,7 +1,7 @@
 function Greeting() {
   return (
     <div className="centerText">
-      <h1>Hello, World!</h1>
+      <h1>Budget Budi</h1>
     </div>
   );
 }
