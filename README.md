@@ -4,7 +4,7 @@
 
 ### Finance terms
 
-- Amortization
+- [Amortization](https://www.investopedia.com/terms/a/amortization.asp)
 
 ### How to Calculate Loan Amortization
 
