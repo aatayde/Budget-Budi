@@ -1,13 +1,10 @@
 let income = document.getElementById("income");
 let enterIncome = document.getElementById("enterIncome");
 
-console.log(income.value);
-
-let incomeRate = document.getElementById("income-type");
-
 function displayIncome() {
   let displayIncome = document.getElementById("displayIncome");
-  displayIncome.innerText = `You're income is ${income.value}`;
+  let yearlyIncome = income.value * 40 * 52;
+  displayIncome.innerText = `Your estimated yearly income is $${yearlyIncome} before deductions`;
 }
 
 enterIncome.addEventListener("click", displayIncome);
