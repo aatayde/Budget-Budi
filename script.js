@@ -7,4 +7,9 @@ function updateDisplayIncome() {
   displayIncome.innerText = `Your estimated yearly income is $${yearlyIncome} before deductions`;
 }
 
+function addExpense() {
+  console.log("you clicked the add expense function");
+}
+
 addEventListener("input", updateDisplayIncome);
+addEventListener("click", addExpense);
