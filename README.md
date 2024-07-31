@@ -17,3 +17,9 @@ principal payment = total monthly payment - (outstanding load balance \* interes
 ```
 document.createElement()
 ```
+
+#### [Event Listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+
+```
+income.addEventListener("input", updateDisplayIncome)
+```
