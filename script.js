@@ -1,5 +1,6 @@
 let income = document.getElementById("income");
 let displayIncome = document.getElementById("displayIncome");
+let addExpense = document.getElementById("addExpense");
 
 function updateDisplayIncome() {
   console.log(income.value);
@@ -7,9 +8,9 @@ function updateDisplayIncome() {
   displayIncome.innerText = `Your estimated yearly income is $${yearlyIncome} before deductions`;
 }
 
-function addExpense() {
+function createElementExpense() {
   console.log("you clicked the add expense function");
 }
 
-addEventListener("input", updateDisplayIncome);
-addEventListener("click", addExpense);
+income.addEventListener("input", updateDisplayIncome);
+addExpense.addEventListener("click", createElementExpense);
