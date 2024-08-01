@@ -8,9 +8,29 @@ function updateDisplayIncome() {
   displayIncome.innerText = `Your estimated yearly income is $${yearlyIncome} before deductions`;
 }
 
+function handleElementExpense() {
+  console.log("you clicked the create element expense function");
+  createElementExpense();
+  addElementExpense();
+  appendElementExpense();
+  insertElementExpense();
+}
+
 function createElementExpense() {
-  console.log("you clicked the add expense function");
+  console.log("create new element expense");
+}
+
+function addElementExpense() {
+  console.log("add element expense");
+}
+
+function appendElementExpense() {
+  console.log("append element expense");
+}
+
+function insertElementExpense() {
+  console.log("insert element expense");
 }
 
 income.addEventListener("input", updateDisplayIncome);
-addExpense.addEventListener("click", createElementExpense);
+addExpense.addEventListener("click", handleElementExpense);
