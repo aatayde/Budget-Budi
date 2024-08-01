@@ -12,6 +12,8 @@ principal payment = total monthly payment - (outstanding load balance \* interes
 
 ### Javascript documentation
 
+#### [JavaScript Guidelines](https://developer.mozilla.org/en-US/docs/MDN/Writing_guidelines/Writing_style_guide/Code_style_guide/JavaScript)
+
 #### [Create a Element](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 
 ```
