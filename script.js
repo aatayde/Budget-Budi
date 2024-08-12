@@ -19,10 +19,12 @@ function handleElementExpense() {
   insertElementExpense();
 }
 
+let count = 0;
 function createElementExpense() {
+  count++;
   console.log("create new element expense");
   let newExpense = document.createElement("input");
-  newExpense.id = "expenseValue";
+  newExpense.id = `${expenseValue} + count`;
   newExpense.type = "number";
   newExpense.value = 0;
   // newExpense.appendChild(expenseList);
