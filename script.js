@@ -14,17 +14,18 @@ function updateDisplayIncome() {
 function handleElementExpense() {
   console.log("you clicked the create element expense function");
   createElementExpense();
+  add;
   addElementExpense();
   appendElementExpense();
   insertElementExpense();
 }
 
+// Add value to count
 let count = 0;
+
 function createElementExpense() {
-  count++;
   console.log("create new element expense");
   let newExpense = document.createElement("input");
-  newExpense.id = `${expenseValue} + count`;
   newExpense.type = "number";
   newExpense.value = 0;
   // newExpense.appendChild(expenseList);
@@ -47,4 +48,8 @@ addExpense.addEventListener("click", (e) => {
   console.log(this.className);
   console.log(e.currentTarget === this);
   console.log(e.timeStamp);
+  console.log(this.id);
+  // on click, increment count & add to addExpense
+  count++;
+  console.log(count);
 });
