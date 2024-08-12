@@ -43,7 +43,7 @@ function insertElementExpense() {
 }
 
 income.addEventListener("input", updateDisplayIncome);
-addExpense.addEventListener("click", function (e) {
+addExpense.addEventListener("click", (e) => {
   console.log(this.className);
   console.log(e.currentTarget === this);
   console.log(e.timeStamp);
