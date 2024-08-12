@@ -1,6 +1,9 @@
 let income = document.getElementById("income");
 let displayIncome = document.getElementById("displayIncome");
 let addExpense = document.getElementById("addExpense");
+let expenseList = document.getElementById("expenseList");
+
+// const
 
 function updateDisplayIncome() {
   console.log(income.value);
@@ -18,6 +21,11 @@ function handleElementExpense() {
 
 function createElementExpense() {
   console.log("create new element expense");
+  let newExpense = document.createElement("input");
+  newExpense.id = "expenseValue";
+  newExpense.type = "number";
+  newExpense.value = 0;
+  // newExpense.appendChild(expenseList);
 }
 
 function addElementExpense() {
