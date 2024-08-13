@@ -23,11 +23,13 @@ function handleElementExpense() {
 // Add value to count
 let count = 0;
 
-function createElementExpense() {
+function createElementExpense(count) {
   console.log("create new element expense");
   let newExpense = document.createElement("input");
   newExpense.type = "number";
   newExpense.value = 0;
+  newExpense.id = "expense-" + count;
+  console.log(newExpense.id);
   // newExpense.appendChild(expenseList);
 }
 
@@ -48,8 +50,10 @@ addExpense.addEventListener("click", (e) => {
   console.log(this.className);
   console.log(e.currentTarget === this);
   console.log(e.timeStamp);
-  console.log(this.id);
   // on click, increment count & add to addExpense
+  console.log(this.id);
   count++;
   console.log(count);
+  // add count as id value of newly created element
+  createElementExpense(count);
 });
