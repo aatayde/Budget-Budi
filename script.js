@@ -23,14 +23,14 @@ function handleElementExpense() {
 // Add value to count
 let count = 0;
 
-function createElementExpense(count) {
+function createElementExpense() {
   console.log("create new element expense");
   let newExpense = document.createElement("input");
   newExpense.type = "number";
   newExpense.value = 0;
   newExpense.id = "expense-" + count;
   console.log(newExpense.id);
-  // newExpense.appendChild(expenseList);
+  expenseList.appendChild(newExpense);
 }
 
 function addElementExpense() {
