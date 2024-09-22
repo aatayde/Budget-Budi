@@ -2,6 +2,7 @@ let income = document.getElementById("income");
 let displayIncome = document.getElementById("displayIncome");
 let addExpense = document.getElementById("addExpense");
 let expenseList = document.getElementById("expenseList");
+let displayExpense = document.getElementById("displayExpense");
 
 // const
 
@@ -14,10 +15,6 @@ function updateDisplayIncome() {
 function handleElementExpense() {
   console.log("you clicked the create element expense function");
   createElementExpense();
-  add;
-  addElementExpense();
-  appendElementExpense();
-  insertElementExpense();
 }
 
 // Add value to count
@@ -27,22 +24,10 @@ function createElementExpense() {
   console.log("create new element expense");
   let newExpense = document.createElement("input");
   newExpense.type = "number";
-  newExpense.value = 0;
+  // newExpense.value = 0;
   newExpense.id = "expense-" + count;
   console.log(newExpense.id);
   expenseList.appendChild(newExpense);
-}
-
-function addElementExpense() {
-  console.log("add element expense");
-}
-
-function appendElementExpense() {
-  console.log("append element expense");
-}
-
-function insertElementExpense() {
-  console.log("insert element expense");
 }
 
 income.addEventListener("input", updateDisplayIncome);
