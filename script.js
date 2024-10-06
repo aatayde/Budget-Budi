@@ -5,8 +5,6 @@ let expenseList = document.getElementById("expenseList");
 let displayExpense = document.getElementById("displayExpense");
 let displaySumOfExpenses = document.getElementById("displaySumOfExpenses");
 
-// const
-
 function updateDisplayIncome() {
   console.log(income.value);
   let yearlyIncome = income.value * 40 * 52;
@@ -26,8 +24,8 @@ function updateDisplayExpenseTotal() {
   console.log(expenseListArray);
   let sum = 0;
 
-  for (x = 0; x < expenseListArray.length; x++) {
-    sum += parseFloat(expenseListArray[x].value);
+  for (let x = 0; x < expenseListArray.length; x++) {
+    sum += parseFloat(expenseListArray[x].value) || 0;
   }
   console.log(sum);
   displaySumOfExpenses.innerText = sum;
@@ -50,14 +48,13 @@ function createElementExpense() {
 
   // Add each expense to a list
   expenseListArray.push(newExpense);
-  // WHEN DO I UPDATE THE EXPENSES???
-  newExpense.addEventListener("newExpense", updateDisplayExpenseTotal);
+
+  // Update the expenses dynamically when there is an input
+  newExpense.addEventListener("input", updateDisplayExpenseTotal);
 }
 
 // Dynamically update income
 income.addEventListener("input", updateDisplayIncome);
-// Dynamically update sum of expenses
-newExpense.addEventListener("input", updateDisplayExpenseTotal);
 
 addExpense.addEventListener("click", (e) => {
   console.log(this.className);
