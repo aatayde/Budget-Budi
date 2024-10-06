@@ -19,6 +19,23 @@
       #expenseList {
         display: inline-grid;
       }
+
+      /* Remove Arrows from input elements */
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+
+      /* Center add expense button  */
+      #addExpense {
+        margin: auto;
+      }
     </style>
   </head>
   <body>
