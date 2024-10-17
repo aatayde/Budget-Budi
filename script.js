@@ -1,17 +1,40 @@
 let income = document.getElementById("income");
-let displayIncome = document.getElementById("displayIncome");
 let addExpense = document.getElementById("addExpense");
 let expenseList = document.getElementById("expenseList");
 let displayExpense = document.getElementById("displayExpense");
+let displayYearlyIncome = document.getElementById("displayYearlyIncome");
 let displaySumOfExpenses = document.getElementById("displaySumOfExpenses");
+let displayMonthlyIncome = document.getElementById("displayMonthlyIncome");
+let displayBiWeeklyIncome = document.getElementById("displayBiWeeklyIncome");
+let displayWeeklyIncome = document.getElementById("displayWeeklyIncome");
+let displayDailyIncome = document.getElementById("displayDailyIncome");
+let displayIncomeText = document.getElementById("displayIncomeText");
 
 function updateDisplayIncome() {
   console.log(income.value);
+  displayIncomeText.innerText = `Your income before deductions is:`;
+  // displayIncomeText.innerText = `Your income before deductions is $${income.value}`;
+  console.log(displayIncomeText.innerText);
+  // Yearly income
   let yearlyIncome = income.value * 40 * 52;
-  displayIncome.innerText = `Your estimated yearly income before deductions is $${yearlyIncome}`;
-  console.log("Monthly Income: $", income.value * 40 * 4);
-  console.log("Bi Weekly Income: $", income.value * 40 * 2);
-  console.log("Weekly Income: $", income.value * 40);
+  console.log("Yearly Income: $", yearlyIncome);
+  displayYearlyIncome.innerText = `Yearly $${yearlyIncome}`;
+  // Monthly
+  let monthlyIncome = income.value * 40 * 4;
+  console.log("Monthly Income: $", monthlyIncome);
+  displayMonthlyIncome.innerText = `Monthly $${monthlyIncome}`;
+  // Bi Weekly
+  let biWeeklyIncome = income.value * 40 * 2;
+  console.log("Bi Weekly Income: $", biWeeklyIncome);
+  displayBiWeeklyIncome.innerText = `Bi-Weekly $${biWeeklyIncome}`;
+  // Weekly
+  let weeklyIncome = income.value * 40;
+  console.log("Weekly Income: $", weeklyIncome);
+  displayWeeklyIncome.innerText = `Weekly $${weeklyIncome}`;
+  // Daily
+  let dailyIncome = income.value * 8;
+  console.log("Daily Income: $", dailyIncome);
+  displayDailyIncome.innerText = `Daily $${dailyIncome}`;
 }
 
 function handleElementExpense() {
